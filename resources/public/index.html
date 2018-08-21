@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <canvas id="chemotaxis-canvas" width="500" height="500"></canvas>
+        <style type="text/css">
+          #chemotaxis-canvas {
+              padding: 0px;
+              margin: 40px;
+              border:black 1px solid;
+          }
+          .body {background-color: "black";}
+        </style>
+
+        <input id="chemotaxis-play-button" type="button" value="Play / Pause" />
+        <input id="chemotaxis-food-button" type="button" value="Drop food" />
+        <input id="chemotaxis-remove-food-button" type="button" value="Remove food" />
+
+        <script src="js/chemotaxis-cljs.js" type="text/javascript"></script>
+        <script type="text/javascript">goog.require("chemotaxis_cljs.core");</script>
+
+    </body>
+</html>
