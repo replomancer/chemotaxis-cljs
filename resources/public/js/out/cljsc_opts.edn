@@ -1,1 +1,0 @@
-{:asset-path "js/out", :output-to "resources/public/js/chemotaxis-cljs.js", :main chemotaxis_cljs.core, :output-dir "resources/public/js/out", :optimizations :none, :source-map true, :source-map-timestamp true, :preloads [figwheel.connect], :external-config #:figwheel{:config {:build-id "dev", :websocket-url "ws://localhost:3449/figwheel-ws"}}}
