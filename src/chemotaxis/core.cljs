@@ -27,9 +27,6 @@
 
 (def chan-timeout-duration 30)
 
-(def food-dropping-min-interval 15000)
-(def food-dropping-max-interval 90000)
-
 (defn cell [food bacterium]
   {:pre [(not (nil? food))
          (not (nil? bacterium))
@@ -218,7 +215,7 @@
         prev-food-amount (get-bacterium-food bacterium)
         ahead-coord (delta-loc coord (get-bacterium-dir bacterium))]
     ;; When food is less abundant, the bacterium flips and chooses
-    ;; the new dir randomly (sometimes it's the same as the old dir).
+    ;; a new dir randomly (sometimes it's the same as the old dir).
     ;; It also flips when the way is blocked (by world borders or another
     ;; bacteria). Otherwise it continues moving forward.
     (when (or (< curr-food-amount prev-food-amount)
