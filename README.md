@@ -9,3 +9,14 @@ and then ported to ClojureScript by [Julian Gamble](https://github.com/juliangam
 [Demo](https://cdn.rawgit.com/replomancer/chemotaxis-cljs/master/resources/public/index.html)
 
 The relevant blog post: https://replomancer.github.io/Chemotaxis
+
+### Run application:
+
+```
+lein clean
+lein figwheel dev
+```
+
+Figwheel will automatically push cljs changes to the browser.
+
+Wait a bit, then browse to [http://localhost:3449](http://localhost:3449).
